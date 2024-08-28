@@ -1,0 +1,9 @@
+[package]
+name="desktop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+core = { path = "../core/", version = "0.1.0" }
+bevy = {version = "0.14.1", features = ["bevy_core_pipeline", "bevy_render", "bevy_scene", "bevy_ui", "bevy_text", "bevy_asset"]}
+

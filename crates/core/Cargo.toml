@@ -1,0 +1,22 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = { version = "0.14.1", features = [
+	"bevy_core_pipeline",
+	"bevy_render",
+	"bevy_scene",
+	"bevy_ui",
+	"bevy_text",
+	"bevy_asset",
+] }
+thiserror = "1.0.63"
+serde = { version = "1.0.209", features = ["derive"] }
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
